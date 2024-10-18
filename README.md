@@ -11,7 +11,7 @@ python3 -m venv .venv
 pip3 install -Ur meshtastic
 ```
 
-## Device backup
+## Export Settings
 
 Take a backup of device settings before applying, to recover if needed.
 
@@ -19,7 +19,7 @@ Take a backup of device settings before applying, to recover if needed.
 meshtastic --export-config > config.yml
 ```
 
-## Apply settings from device config file
+## Apply settings
 
 ```bash
 meshtastic --configure config.yml
@@ -27,7 +27,7 @@ meshtastic --configure config.yml
 
 The device will reboot 10-30 sec. after the settings are applied.
 
-## Manually configure settings
+## Or, Manually apply specific settings
 
 ```bash
 # Common settings
