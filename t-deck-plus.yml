@@ -1,0 +1,56 @@
+# start of Meshtastic configure yaml
+channel_url: https://meshtastic.org/e/#CgcSAQE6AggNEg4IATgBQANIAVAUWAFoAQ
+config:
+  bluetooth:
+    mode: RANDOM_PIN
+  device:
+    nodeInfoBroadcastSecs: 10800
+  display:
+    screenOnSecs: 30
+  lora:
+    channelNum: 1
+    hopLimit: 3
+    region: US
+    sx126xRxBoostedGain: true
+    txEnabled: true
+    txPower: 20
+    usePreset: true
+  network:
+    ntpServer: meshtastic.pool.ntp.org
+  position:
+    broadcastSmartMinimumDistance: 100
+    broadcastSmartMinimumIntervalSecs: 30
+    gpsMode: ENABLED
+    gpsUpdateInterval: 120
+    positionBroadcastSecs: 900
+    positionBroadcastSmartEnabled: true
+    positionFlags: 1003
+  power:
+    isPowerSaving: true
+    lsSecs: 300
+    minWakeSecs: 30
+    sdsSecs: 4294967295
+    waitBluetoothSecs: 30
+  security:
+    serialEnabled: true
+module_config:
+  ambientLighting:
+    blue: 188
+    current: 10
+    green: 61
+    red: 202
+  detectionSensor:
+    detectionTriggeredHigh: true
+    minimumBroadcastSecs: 45
+  externalNotification:
+    alertMessageBuzzer: true
+    enabled: true
+    useI2sAsBuzzer: true
+  mqtt:
+    address: mqtt.meshtastic.org
+    encryptionEnabled: true
+    password: large4cats
+    root: msh/US/WA
+    username: meshdev
+owner: Muggz T-Deck Plus
+owner_short: Mug
